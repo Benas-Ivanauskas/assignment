@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --gray-color: #475467;
+  --black-color: #101828;
+  --light-gray-color: #98a2b3;
+  --purple-color: #6e40d7;
+  --button-border: #d0d5dd;
+  --form-border: #eaecf0;
+  --subject-color: #667085;
+}
+
+.btn {
+  font-size: 0.875;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 16px 10px 16px;
+  height: 40px;
+}
+
+.btn--previous {
+  border: 1px solid var(--button-border);
+}
+
+.btn--next {
+  background-color: var(--purple-color);
+}
+
+.mail-icon {
+  width: 40px;
+  height: 40px;
+}
+.mail-icon img {
+  width: 16.67px;
+  height: 13.33px;
+}
+.initial-email {
+  height: 72px;
+  border-bottom: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.subject-input {
+  height: 52px;
+  border-bottom: none;
+}
+
+.text-input {
+  height: 231px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.toolbars {
+  max-width: 320px;
+  height: 32px;
+}
+
+.icons {
+  width: 10.75px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.textarea-input {
+  height: 150px;
+}
+
+.toolbars > img {
+  cursor: pointer;
+}
+
+.addNewStep-btn {
+  padding: 8px 14px 8px 14px;
+  height: 36px;
+}
+
+.tick-icon {
+  width: 12px;
+  height: 10.5px;
+}
+.tick-icon {
+  width: 8px;
+  height: 8px;
+}
+
+.descriptions {
+  color: var(--gray-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.initialEmail-input::placeholder {
+  color: var(--black-color);
+}
+@media all and (max-width: 450px) {
+  .initialEmail-input {
+    width: 150px;
+  }
+  .phone-input {
+    width: 150px;
+    font-size: 14px;
+  }
+}
