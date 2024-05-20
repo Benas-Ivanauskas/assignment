@@ -3,10 +3,10 @@ import { FaPhoneVolume } from "react-icons/fa";
 function FormPhone({ phoneNumber, setPhoneNumber }) {
   return (
     <form className="phone-form">
-      <div className="flex container border mt-5 py-3">
+      <div className="flex container border mt-5 py-3 rounded-lg">
         <div className="flex items-center gap-5">
           <div
-            className="mail-icon flex justify-center items-center border rounded-lg"
+            className="mail-icon flex justify-center items-center border"
             style={{ border: "1px solid var(--form-border)" }}
           >
             <FaPhoneVolume />
