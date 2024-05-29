@@ -89,10 +89,6 @@ body {
 }
 
 .tick-icon {
-  width: 12px;
-  height: 10.5px;
-}
-.tick-icon {
   width: 8px;
   height: 8px;
 }
@@ -106,6 +102,24 @@ body {
 .initialEmail-input::placeholder {
   color: var(--black-color);
 }
+
+.step-index-active {
+  @apply w-6 h-6 border-2 rounded-full flex justify-center items-center;
+  border-color: var(--purple-color);
+}
+
+.step-index-notActive {
+  @apply w-6 h-6 border-2 rounded-full flex justify-center items-center;
+  border-color: var(--light-gray-color);
+}
+
+.dot-active {
+  width: 8px;
+  height: 8px;
+  background-color: var(--purple-color);
+  border-radius: 4px;
+}
+
 @media all and (max-width: 450px) {
   .initialEmail-input {
     width: 150px;

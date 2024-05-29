@@ -1,6 +1,6 @@
 const PageHeader = () => {
   return (
-    <div>
+    <header>
       <div className="flex items-center gap-5 my-5">
         <img src="images/send-arrow.png" alt="arrow send" />
         <img src="images/greater-icon.png" alt="greater icon" />
@@ -9,7 +9,7 @@ const PageHeader = () => {
       <h2 className="text-3xl weight-bold font-semibold leading-9 mb-5">
         New sequence
       </h2>
-    </div>
+    </header>
   );
 };
 

@@ -1,4 +1,9 @@
-function SectionHeader() {
+function SectionHeader({
+  handleNextBtn,
+  completed,
+  handlePreviousBtn,
+  isLastStep,
+}) {
   return (
     <div
       className="sequence-steps flex justify-between pb-5 border-b flex-wrap lg:flex-wrap"
@@ -13,8 +18,28 @@ function SectionHeader() {
         </p>
       </div>
       <div className="flex gap-4 ">
-        <button className="btn btn--previous">Previous</button>
-        <button className="btn btn--next text-white">Next</button>
+        {completed ? (
+          <>
+            <button
+              className="btn btn--next text-white"
+              onClick={handleNextBtn}
+            >
+              {completed || isLastStep ? "Completed" : "Next"}
+            </button>
+          </>
+        ) : (
+          <>
+            <button className="btn btn--previous" onClick={handlePreviousBtn}>
+              Previous
+            </button>
+            <button
+              className="btn btn--next text-white"
+              onClick={handleNextBtn}
+            >
+              {completed || isLastStep ? "Finish" : "Next"}
+            </button>
+          </>
+        )}
       </div>
     </div>
   );
