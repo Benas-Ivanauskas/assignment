@@ -6,16 +6,14 @@ const AddNewStepButton = ({ handleAddingNewStep, newStep, setNewStep }) => {
       {newStep === true ? (
         <button
           onClick={() => setNewStep(false)}
-          style={{ border: `1px solid var(--button-border)` }}
-          className="addNewStep-btn mt-5 rounded-lg text-sm font-semibold leading-5 mb-5"
+          className="px-3 py-2 mt-5 rounded-lg text-sm font-semibold leading-5 mb-5 border-b-1 addNewStep-btn"
         >
           - Remove step
         </button>
       ) : (
         <button
           onClick={handleAddingNewStep}
-          style={{ border: `1px solid var(--button-border)` }}
-          className="addNewStep-btn mt-5 rounded-lg text-sm font-semibold leading-5 mb-5"
+          className="mt-5 px-3 py-2 rounded-lg text-sm font-semibold leading-5 mb-5 addNewStep-btn"
         >
           + Add new step
         </button>

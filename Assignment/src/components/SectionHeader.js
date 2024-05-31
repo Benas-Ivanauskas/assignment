@@ -5,15 +5,12 @@ function SectionHeader({
   isLastStep,
 }) {
   return (
-    <div
-      className="sequence-steps flex justify-between pb-5 border-b flex-wrap lg:flex-wrap"
-      style={{ borderBottom: "1px solid var(--form-border)" }}
-    >
+    <div className="sequence-steps flex justify-between pb-5 flex-wrap lg:flex-wrap border-b border-b-1 border-formBorder">
       <div>
-        <h3 className="text-lg font-semibold leading-7 mb-1 ">
+        <h3 className="text-xl font-semibold leading-7 mb-1 ">
           Sequence steps
         </h3>
-        <p className="font-normal text-sm leading-5 mb-2">
+        <p className="font-normal text-base leading-5 mb-2">
           Create steps for your sequence
         </p>
       </div>
@@ -21,7 +18,7 @@ function SectionHeader({
         {completed ? (
           <>
             <button
-              className="btn btn--next text-white"
+              className="btn bg-purple text-white"
               onClick={handleNextBtn}
             >
               {completed || isLastStep ? "Completed" : "Next"}
@@ -29,11 +26,14 @@ function SectionHeader({
           </>
         ) : (
           <>
-            <button className="btn btn--previous" onClick={handlePreviousBtn}>
+            <button
+              className="btn border border-btnBorder border-b-1"
+              onClick={handlePreviousBtn}
+            >
               Previous
             </button>
             <button
-              className="btn btn--next text-white"
+              className="btn bg-purple text-white"
               onClick={handleNextBtn}
             >
               {completed || isLastStep ? "Finish" : "Next"}

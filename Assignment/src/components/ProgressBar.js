@@ -20,7 +20,7 @@ function ProgressBar({ progressBarObj, completed, step }) {
                       : "step-index-notActive"
                   }
                 >
-                  <span className="dot-active"></span>
+                  <span className="w-2 h-2 bg-purple rounded"></span>
                 </p>
               )}
             </div>
